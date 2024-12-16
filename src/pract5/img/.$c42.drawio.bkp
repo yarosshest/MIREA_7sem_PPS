@@ -1,0 +1,181 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Страница — 1" id="iya0kXq6-JlQzgDN-NjO">
+    <mxGraphModel dx="1593" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="L2XNWcii2aWg_RuWrpqC-65" target="L2XNWcii2aWg_RuWrpqC-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-7" value="Информация&lt;div&gt;о работе конвертатора&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-6" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="65" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Консоль/терминал" c4Type="Software System" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-10">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="1139" y="20" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-10" target="L2XNWcii2aWg_RuWrpqC-64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1199" y="190" />
+              <mxPoint x="170" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-12" value="Передача пути&lt;div&gt;к файлам DRC правил&lt;div&gt;и конфигурации&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.0182" y="-2" relative="1" as="geometry">
+            <mxPoint x="523" y="-28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Программа-конвертер DRC правил" c4Type="SystemScopeBoundary" c4Application="Component" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-62">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="20" y="270" width="1450" height="600" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-64" target="L2XNWcii2aWg_RuWrpqC-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-70" value="Исходный код DRC" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-69" vertex="1" connectable="0">
+          <mxGeometry x="0.0769" y="-3" relative="1" as="geometry">
+            <mxPoint x="-10" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Обработка пользовательского ввода" c4Type="Component" c4Technology="Python, argparser, configparser" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-64">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="110" y="540" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Генерация отчета" c4Type="Component" c4Technology="Python" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-65">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="1200" y="330" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Конвертация" c4Type="Component" c4Technology="Python" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-66">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="1200" y="540" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-67" target="L2XNWcii2aWg_RuWrpqC-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-74" value="Опитмизированные&lt;div&gt;и упорядоченные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-73" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="1" relative="1" as="geometry">
+            <mxPoint x="6" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Предобработка" c4Type="Component" c4Technology="Python, NetworkX" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-67">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="840" y="540" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-68" target="L2XNWcii2aWg_RuWrpqC-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-72" value="Структурированные&lt;div&gt;данные&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-71" vertex="1" connectable="0">
+          <mxGeometry x="-0.0833" y="-1" relative="1" as="geometry">
+            <mxPoint x="5" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Парсинг" c4Type="Component" c4Technology="Python, Lark" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-68">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="540" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-66" target="L2XNWcii2aWg_RuWrpqC-65" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-76" value="Информация о транлсяции" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-75" vertex="1" connectable="0">
+          <mxGeometry x="-0.0222" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="L2XNWcii2aWg_RuWrpqC-65" target="L2XNWcii2aWg_RuWrpqC-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1680" y="480" as="sourcePoint" />
+            <mxPoint x="1807" y="480" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-78" value="Выгрузка&lt;br&gt;&lt;div&gt;отчетности в файл&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-77" vertex="1" connectable="0">
+          <mxGeometry x="0.2222" y="-5" relative="1" as="geometry">
+            <mxPoint x="-124" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Файловая система ОС" c4Type="Software System" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="L2XNWcii2aWg_RuWrpqC-79">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="1620" y="160" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-79" target="L2XNWcii2aWg_RuWrpqC-64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1680" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-81" value="Загрузка&lt;div&gt;исходный файлов&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-80" vertex="1" connectable="0">
+          <mxGeometry x="0.04" y="3" relative="1" as="geometry">
+            <mxPoint x="803" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="L2XNWcii2aWg_RuWrpqC-66" target="L2XNWcii2aWg_RuWrpqC-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1450" y="400" as="sourcePoint" />
+            <mxPoint x="1750" y="270" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L2XNWcii2aWg_RuWrpqC-83" value="Выгрузка&lt;div&gt;сконвертированных&lt;/div&gt;данных в файл" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L2XNWcii2aWg_RuWrpqC-82" vertex="1" connectable="0">
+          <mxGeometry x="0.2222" y="-5" relative="1" as="geometry">
+            <mxPoint x="-265" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zgxfl8MzGAHAxMzY8Nfy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-64" target="L2XNWcii2aWg_RuWrpqC-68" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="760" />
+              <mxPoint x="600" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zgxfl8MzGAHAxMzY8Nfy-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-64" target="L2XNWcii2aWg_RuWrpqC-67" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="760" />
+              <mxPoint x="960" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zgxfl8MzGAHAxMzY8Nfy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-64" target="L2XNWcii2aWg_RuWrpqC-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="760" />
+              <mxPoint x="1320" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zgxfl8MzGAHAxMzY8Nfy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="L2XNWcii2aWg_RuWrpqC-64" target="L2XNWcii2aWg_RuWrpqC-65" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="760" />
+              <mxPoint x="90" y="760" />
+              <mxPoint x="90" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XC0Btwzo-0E4uWRr9sjl-1" value="Параметры&lt;div&gt;настройки&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Zgxfl8MzGAHAxMzY8Nfy-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.9419" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

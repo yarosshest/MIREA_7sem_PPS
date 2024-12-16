@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Страница — 1" id="-78a0exDvdF9DhPtFyEf">
+    <mxGraphModel dx="1195" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3xAmD_kSVC-kQM2HYZev-1" value="&lt;div&gt;Вызов программы (в консоли)&lt;/div&gt;&lt;div&gt;с параметрами&lt;/div&gt;&lt;div&gt;(путь до DRC файла&lt;/div&gt;&lt;div&gt;и&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;конфигурационного файла).&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="460" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3xAmD_kSVC-kQM2HYZev-3" value="Ожидание окончания процесса конвертации" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="465" width="176" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3xAmD_kSVC-kQM2HYZev-4" value="&lt;div&gt;Получение результата&lt;br&gt;(просмотр отчета конвертации,&lt;/div&gt;&lt;div&gt;файла с&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;результатом конвертации,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;сообщения об успехе или ошибке).&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="460" width="212" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3xAmD_kSVC-kQM2HYZev-5" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="243.5" y="487.5" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="3xAmD_kSVC-kQM2HYZev-6" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="530" y="487.5" width="60" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

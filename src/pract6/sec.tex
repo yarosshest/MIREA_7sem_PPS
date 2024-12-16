@@ -1,0 +1,61 @@
+@startuml
+actor "Пользователь" as User
+actor "Гость" as Guest
+participant "Мобильное приложение" as MobileApp
+participant API
+database "База данных" as Database
+participant "Система рекомендаций" as RecommendationSystem
+
+== Просмотр информации о фильме ==
+User -> MobileApp : Выбирает фильм для просмотра
+MobileApp -> API : Запрос информации о фильме (Product)
+API -> Database : Получить данные о Product
+Database --> API : Данные о Product
+API -> MobileApp : Ответ с данными о фильме
+MobileApp -> User : Отображает информацию о фильме
+
+Guest -> MobileApp : Выбирает фильм для просмотра
+MobileApp -> API : Запрос информации о фильме (Product)
+API -> Database : Получить данные о Product
+Database --> API : Данные о Product
+API -> MobileApp : Ответ с данными о фильме
+MobileApp -> Guest : Отображает информацию о фильме
+
+== Поиск фильмов ==
+User -> MobileApp : Вводит критерии поиска
+MobileApp -> API : Запрос поиска фильмов (Product)
+API -> Database : Выполнить поиск по Product
+Database --> API : Результаты поиска
+API -> MobileApp : Ответ с результатами поиска
+MobileApp -> User : Отображает результаты поиска
+
+Guest -> MobileApp : Вводит критерии поиска
+MobileApp -> API : Запрос поиска фильмов (Product)
+API -> Database : Выполнить поиск по Product
+Database --> API : Результаты поиска
+API -> MobileApp : Ответ с результатами поиска
+MobileApp -> Guest : Отображает результаты поиска
+
+== Оценка фильма (Только Пользователь) ==
+User -> MobileApp : Выбирает фильм для оценки
+MobileApp -> API : Отправка оценки фильма (Rate)
+API -> Database : Сохранить оценку в Rate
+Database --> API : Подтверждение сохранения
+API -> MobileApp : Ответ с подтверждением оценки
+MobileApp -> User : Отображает подтверждение оценки
+
+== Просмотр рекомендаций ==
+User -> MobileApp : Переходит на страницу рекомендаций
+MobileApp -> API : Запрос рекомендаций
+API -> RecommendationSystem : Запрос рекомендаций
+alt Система рекомендаций доступна
+RecommendationSystem -> Database : Запрос дополнительных данных
+Database --> RecommendationSystem : Дополнительные данные
+RecommendationSystem --> API : Рекомендации
+API -> MobileApp : Ответ с рекомендациями
+MobileApp -> User : Отображает рекомендации
+else Система рекомендаций недоступна
+API -> MobileApp : Сообщение о недоступности системы рекомендаций
+MobileApp -> User : Отображает уведомление об ошибке
+end
+@enduml

@@ -1,0 +1,23 @@
+\documentclass[14pt,a4paper,oneside]{extarticle}
+
+\usepackage{../res/style}
+\graphicspath{{./img/}}
+\date{\today}
+
+\begin{document}
+    \renewcommand{\figurename}{Рисунок}
+    \renewcommand{\contentsname}{Содержание}
+    \renewcommand{\bibname}{Список литературы}
+
+    \include{title}
+    \tableofcontents
+
+    \clearpage
+
+    \include{analysis}
+    \include{input-output}
+    \include{tobe}
+    \include{borders}
+    \include{tree}
+
+\end{document}

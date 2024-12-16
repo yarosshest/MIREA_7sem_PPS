@@ -1,0 +1,64 @@
+@startuml
+' Установка начальной даты проекта
+Project starts 2023-11-01
+' Настройка масштаба диаграммы
+printscale daily
+' Установка масштаба отображения
+scale 30 days
+
+' Определение проекта и задач
+Project "Разработка программного средства" as proj {
+    [Сбор требований] as req #AntiqueWhite
+    [Анализ требований] as anal #Beige
+    [Проектирование системы] as design #LightBlue
+    [Разработка] as dev {
+        [Модуль A] as modA #LightGreen
+        [Модуль B] as modB #LightGreen
+    }
+    [Тестирование] as test #LightCoral
+    [Развертывание] as deploy #LightGray
+}
+
+' Указание временных рамок и исполнителей
+req starts at 2023-11-01
+req lasts 5 days
+req is done by "Аналитик"
+
+anal starts at 2023-11-06
+anal lasts 5 days
+anal is done by "Аналитик"
+
+design starts at 2023-11-11
+design lasts 7 days
+design is done by "Системный архитектор"
+
+dev starts at 2023-11-18
+dev lasts 12 days
+
+modA starts at 2023-11-18
+modA lasts 10 days
+modA is done by "Разработчик 1"
+
+modB starts at 2023-11-18
+modB lasts 12 days
+modB is done by "Разработчик 2"
+
+test starts at 2023-12-01
+test lasts 7 days
+test is done by "Тестировщик"
+
+deploy starts at 2023-12-08
+deploy lasts 3 days
+deploy is done by "Инженер DevOps"
+
+' Определение зависимостей между задачами
+req --> anal
+anal --> design
+design --> dev
+dev --> test
+test --> deploy
+
+' Указание зависимости между модулями разработки
+modA -> modB
+
+@enduml

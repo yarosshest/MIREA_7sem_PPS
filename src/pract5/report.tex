@@ -1,0 +1,271 @@
+\section{Проектирование логической модели данных}
+
+Логическая модель данных в данной системе представляет собой объектно-реляционную структуру, охватывающую основные сущности и их взаимосвязи, включая \textbf{Product}, \textbf{Distance}, \textbf{Vector}, \textbf{Lemma}, \textbf{Attribute}, \textbf{User} и \textbf{Rate}. Эти объекты необходимы для хранения и обработки данных, связанных с продуктами, их характеристиками и оценками пользователей.
+
+\subsection{Product}
+
+\textbf{Product} — это основная модель, представляющая продукт в системе. Каждый продукт может иметь набор атрибутов, векторное представление, лемму и пользовательские оценки.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{id:} идентификатор продукта (первичный ключ);
+	\item \textbf{name:} имя продукта;
+	\item \textbf{photo:} ссылка на фотографию продукта;
+	\item \textbf{description:} описание продукта.
+\end{itemize}
+
+Связи:
+\begin{itemize}
+	\item \textbf{distance:} список расстояний (\textbf{Distance}), связанных с продуктом;
+	\item \textbf{attribute:} список атрибутов (\textbf{Attribute}), связанных с продуктом;
+	\item \textbf{vector:} векторное представление (\textbf{Vector});
+	\item \textbf{lemma:} лемма (\textbf{Lemma});
+	\item \textbf{rates:} список оценок (\textbf{Rate}), связанных с продуктом.
+\end{itemize}
+
+\subsection{Distance}
+
+\textbf{Distance} представляет расстояние между двумя продуктами.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{id:} идентификатор расстояния (первичный ключ);
+	\item \textbf{product\_f\_id:} идентификатор первого продукта;
+	\item \textbf{product\_s\_id:} идентификатор второго продукта;
+	\item \textbf{distance:} числовое значение расстояния.
+\end{itemize}
+
+\subsection{Vector}
+
+\textbf{Vector} описывает векторное представление продукта.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{id:} идентификатор вектора (первичный ключ);
+	\item \textbf{product\_id:} идентификатор продукта;
+	\item \textbf{vector:} сериализованное представление вектора.
+\end{itemize}
+
+Связь:
+\begin{itemize}
+	\item \textbf{product:} связь с сущностью \textbf{Product}.
+\end{itemize}
+
+\subsection{Lemma}
+
+\textbf{Lemma} представляет лемматизированное значение, связанное с продуктом.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{id:} идентификатор леммы (первичный ключ);
+	\item \textbf{product\_id:} идентификатор продукта;
+	\item \textbf{lemma:} текстовое значение леммы.
+\end{itemize}
+
+Связь:
+\begin{itemize}
+	\item \textbf{product:} связь с сущностью \textbf{Product}.
+\end{itemize}
+
+\subsection{Attribute}
+
+\textbf{Attribute} хранит характеристики продукта.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{id:} идентификатор атрибута (первичный ключ);
+	\item \textbf{product\_id:} идентификатор продукта;
+	\item \textbf{name:} имя атрибута;
+	\item \textbf{value\_type:} тип значения атрибута (опционально);
+	\item \textbf{value:} значение атрибута;
+	\item \textbf{value\_description:} описание значения (опционально).
+\end{itemize}
+
+\subsection{User}
+
+\textbf{User} описывает пользователя системы.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{id:} идентификатор пользователя (первичный ключ);
+	\item \textbf{name:} имя пользователя;
+	\item \textbf{password:} пароль пользователя.
+\end{itemize}
+
+Связь:
+\begin{itemize}
+	\item \textbf{rates:} список оценок (\textbf{Rate}), сделанных пользователем.
+\end{itemize}
+
+\subsection{Rate}
+
+\textbf{Rate} представляет оценку продукта, оставленную пользователем.
+
+Атрибуты класса:
+\begin{itemize}
+	\item \textbf{user\_id:} идентификатор пользователя (первичный ключ);
+	\item \textbf{product\_id:} идентификатор продукта (первичный ключ);
+	\item \textbf{rate:} булевое значение оценки.
+\end{itemize}
+
+Связи:
+\begin{itemize}
+	\item \textbf{user:} связь с сущностью \textbf{User};
+	\item \textbf{product:} связь с сущностью \textbf{Product}.
+\end{itemize}
+
+
+\subsection{Диаграмма логической модели}
+
+\begin{image}
+	\includegrph{er.png}
+	\caption{ER-диаграмма}
+	\label{fig:er}
+\end{image}
+\section{Словарь данных}
+
+На первом этапе проектирования базы данных необходимо собрать сведения о предметной области, в том числе о назначении, способах использования и охране структуры данных, а по мере развития проекта осуществлять централизованное накопление информации о концептуальной, логической, внутренней и внешних моделях данных. Словарь данных является как раз тем средством, которое позволяет при проектировании, эксплуатации и развитии базы данных поддерживать и контролировать информацию о данных.
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных Product}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{id} & Идентификатор продукта (первичный ключ) & Целое \\ \hline
+	\textbf{name} & Имя продукта & Строка \\ \hline
+	\textbf{photo} & Ссылка на фотографию продукта & Строка \\ \hline
+	\textbf{description} & Описание продукта & Строка \\ \hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных Distance}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{id} & Идентификатор расстояния (первичный ключ) & Целое \\ \hline
+	\textbf{product\_f\_id} & Идентификатор первого продукта & Целое \\ \hline
+	\textbf{product\_s\_id} & Идентификатор второго продукта & Целое \\ \hline
+	\textbf{distance} & Значение расстояния между продуктами & Вещественное \\ \hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных Vector}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{id} & Идентификатор вектора (первичный ключ) & Целое \\ \hline
+	\textbf{product\_id} & Идентификатор связанного продукта & Целое \\ \hline
+	\textbf{vector} & Векторное представление продукта & Сериализованный \\ \hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных Lemma}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{id} & Идентификатор леммы (первичный ключ) & Целое \\ \hline
+	\textbf{product\_id} & Идентификатор связанного продукта & Целое \\ \hline
+	\textbf{lemma} & Лемматизированное значение & Строка \\ \hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных Attribute}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{id} & Идентификатор атрибута (первичный ключ) & Целое \\ \hline
+	\textbf{product\_id} & Идентификатор связанного продукта & Целое \\ \hline
+	\textbf{name} & Имя атрибута & Строка \\ \hline
+	\textbf{value\_type} & Тип значения атрибута & Строка \\ \hline
+	\textbf{value} & Значение атрибута & Строка \\ \hline
+	\textbf{value\_description} & Описание значения атрибута & Строка \\ \hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных User}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{id} & Идентификатор пользователя (первичный ключ) & Целое \\ \hline
+	\textbf{name} & Имя пользователя & Строка \\ \hline
+	\textbf{password} & Пароль пользователя & Строка \\ \hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|p{5cm}|}
+	\caption{\leftline{Словарь данных Rate}} \\
+	\hline
+	\textbf{Наименование элемента}
+	& \textbf{Определение (предназначение)}
+	& \textbf{Тип} \\ \hline
+	\endhead
+	\textbf{user\_id} & Идентификатор пользователя (первичный ключ, внешний ключ) & Целое \\ \hline
+	\textbf{product\_id} & Идентификатор продукта (первичный ключ, внешний ключ) & Целое \\ \hline
+	\textbf{rate} & Оценка продукта (булевое значение) & Булево \\ \hline
+\end{longtable}
+
+\clearpage
+
+
+\section{Матрица доступа}
+
+Матрица доступа для роли разработчика по отношению к объектам,
+использующимся в логической модели:
+\begin{longtable}{|p{4cm}|p{4cm}|p{4cm}|}
+	\caption{\leftline{Матрица доступа}} \\
+	\hline
+	\textbf{Таблица} & \textbf{Пользователь} & \textbf{Гость} \\ \hline
+	\endfirsthead
+	\hline
+	\textbf{Таблица} & \textbf{Пользователь} & \textbf{Гость} \\ \hline
+	\endhead
+
+	\textbf{Product} &
+	\makecell{Чтение} &
+	\makecell{Чтение} \\ \hline
+
+	\textbf{Distance} &
+	\makecell{Нет доступа} &
+	\makecell{Нет доступа} \\ \hline
+
+	\textbf{Vector} &
+	\makecell{Нет доступа} &
+	\makecell{Нет доступа} \\ \hline
+
+	\textbf{Lemma} &
+	\makecell{Нет доступа} &
+	\makecell{Нет доступа} \\ \hline
+
+	\textbf{Attribute} &
+	\makecell{Чтение} &
+	\makecell{Чтение} \\ \hline
+
+	\textbf{User} &
+	\makecell{Чтение\\Обновление} &
+	\makecell{Нет доступа} \\ \hline
+
+	\textbf{Rate} &
+	\makecell{Создание\\Чтение} &
+	\makecell{Нет доступа} \\ \hline
+\end{longtable}
+
+\clearpage
+
+\section*{\LARGE Вывод}
+\addcontentsline{toc}{section}{Вывод}
+
+Составлен словарь данных и матрица доступа,
+описывающая, что пользователь не взаимодействует с моделями данных напрямую,
+а система автоматически выполняет необходимые преобразования.
+
